@@ -1,0 +1,15 @@
+<% 50.times do |i| %>
+  <div class="nested-yielder">
+    <div class="inner-yield">
+      <div>Header</div>
+    </div>
+
+    <div class="inner-yield">
+      <div>Content <%= i %></div>
+    </div>
+
+    <div class="inner-yield">
+      <div>Footer</div>
+    </div>
+  </div>
+<% end %>

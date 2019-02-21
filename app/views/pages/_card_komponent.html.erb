@@ -1,0 +1,13 @@
+<%= c "nested_yielder" do |ctx| %>
+  <%= c "inner_yield" do %>
+    <div>Header</div>
+  <% end %>
+
+  <%= c "inner_yield" do %>
+    <div>Content <%= card_komponent %></div>
+  <% end %>
+
+  <%= c "inner_yield" do %>
+    <div>Footer</div>
+  <% end %>
+<% end %>
