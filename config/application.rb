@@ -17,5 +17,11 @@ module NestedYields
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+
+    config.middleware.use StackProf::Middleware, enabled: true,
+                           mode: :cpu,
+                           interval: 1000,
+                           save_every: 1
   end
 end
